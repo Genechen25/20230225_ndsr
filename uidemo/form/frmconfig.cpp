@@ -5,21 +5,34 @@
 #include <QStringList>
 #include "flatui.h"
 #include "frmbatterydata.h"
+#include "appinit.h"
+
 frmConfig::frmConfig(QWidget *parent) : QWidget(parent), ui(new Ui::frmConfig)
 {
     ui->setupUi(this);
+
     this->initForm();
     this->initNav();
     this->initIcon();
     Read_Data();
-    FlatUI::Instance()->setSliderQss(ui->horizontalSlider, "#505050", "#1ABC9C", "#1ABC9C");
-    ui->horizontalSlider->setValue(100);
-    FlatUI::Instance()->setSliderQss(ui->horizontalSlider_2, "#505050", "#1ABC9C", "#1ABC9C");
-    ui->horizontalSlider_2->setValue(29);
-    FlatUI::Instance()->setSliderQss(ui->horizontalSlider_3, "#505050", "#1ABC9C", "#1ABC9C");
-    ui->horizontalSlider_3->setValue(0);
+    FlatUI::Instance()->setSliderQss(ui->verticalSlider, "#505050", "#1ABC9C", "#1ABC9C");
+    ui->verticalSlider->setValue(100);
+    QUIHelper::setPushButtonQss(ui->btnsave);
+    QUIHelper::setPushButtonQss(ui->btncancel,5,8,"#E8EDF2","#34495E","#FFFFFF","#2D3E50");
+    QUIHelper::setPushButtonQss(ui->btnchooseFile);
+    QUIHelper::setPushButtonQss(ui->btnstartUpdate);
+    QUIHelper::setPushButtonQss(ui->pushButton_savepath);
+    QUIHelper::setPushButtonQss(ui->btnSOCset);
+    QUIHelper::setPushButtonQss(ui->btnfaultclear);
+    QUIHelper::setPushButtonQss(ui->btnSOPset);
+    QUIHelper::setPushButtonQss(ui->faultenble);
+    QUIHelper::setPushButtonQss(ui->btnReaddata);
+    QUIHelper::setPushButtonQss(ui->btnWritedata);
+    QUIHelper::setPushButtonQss(ui->btnOutputdata);
+
 
 }
+
 
 frmConfig::~frmConfig()
 {
@@ -31,10 +44,9 @@ bool frmConfig::eventFilter(QObject *watched, QEvent *event)
     if (event->type() == QEvent::MouseButtonDblClick) {
         //双击查看电池详细信息
         if (watched == ui->widget_battery_1) {
-            on_pushButton_3_clicked();
+            on_batterydata_clicked();
         }
     }
-
     return QWidget::eventFilter(watched, event);
 }
 void frmConfig::initForm()
@@ -44,6 +56,7 @@ void frmConfig::initForm()
     ui->widget_batteryicon->setProperty("flag", "batteryrealtime");
     ui->widget_batteryicon->setFixedHeight(200);
 }
+
 
 
 
@@ -76,7 +89,10 @@ void frmConfig::initNav()
 
     ui->btnConfigSystem->click();
     ui->widget_battery_1->installEventFilter(this);
+
 }
+
+
 
 
 void frmConfig::initIcon()
@@ -90,6 +106,10 @@ void frmConfig::initIcon()
     ui->btnConfigPosition->setIcon(IconFont::Instance()->getPixmap(QUIConfig::TextColor, 0xe702, 20, 30, 20));
     ui->btnConfigUser->setIcon(IconFont::Instance()->getPixmap(QUIConfig::TextColor, 0xea59, 20, 30, 20));
     ui->btnConfigDebug->setIcon(IconHelper::Instance()->getPixmap(QUIConfig::TextColor, 0xf188, 20, 30, 20));
+    ui->LED1->setImage1(":/led/led/led_grey.gif");
+    ui->LED1->setImage2(":/led/led/led_green.gif");
+
+
 }
 
 void frmConfig::buttonClicked()
@@ -138,7 +158,6 @@ void frmConfig::Read_Data()
     ui->tableWidget_watercoolcontrl->horizontalHeader()->setFont(QFont("黑体",12));
     ui->tableWidget_watercoolcontrl->setAlternatingRowColors(true);
     insertTableItems();
-
 }
 
 
@@ -173,13 +192,25 @@ void frmConfig::insertTableItems()
 
 }
 
-void frmConfig::on_pushButton_3_clicked()
+void frmConfig::on_batterydata_clicked()
 {
     frmbatterydata *configWindow = new frmbatterydata;
-   configWindow->setWindowModality(Qt::ApplicationModal);
+    configWindow->setWindowModality(Qt::ApplicationModal);
+       configWindow->setWindowTitle(QStringLiteral("详细信息"));
         configWindow->show();
+}
 
-//        frmbatterydata w;
-//        w.show();
 
+void frmConfig::on_faultenble_clicked()
+{
+    switch (flag) {
+        case 0:
+            ui->LED1->setFlag(1);
+            flag++;
+            break;
+        case 1:
+            ui->LED1->setFlag(0);
+            flag--;
+            break;
+    }
 }

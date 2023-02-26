@@ -19,57 +19,99 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QWidget" name="widget" native="true">
+  <widget class="QComboBox" name="comboBox">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>391</width>
-     <height>45</height>
+     <x>10</x>
+     <y>560</y>
+     <width>69</width>
+     <height>22</height>
     </rect>
    </property>
-   <layout class="QHBoxLayout" name="horizontalLayout_3">
+   <item>
+    <property name="text">
+     <string>SBMU01</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>SBMU02</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>SBMU03</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>SBMU04</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>SBMU05</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>SBMU06</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>SBMU07</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>SBMU08</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>SBMU09</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>SBMU10</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>601</width>
+     <height>501</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>20</y>
+     <width>171</width>
+     <height>501</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_2">
-      <item>
-       <widget class="QLabel" name="label">
-        <property name="text">
-         <string>TextLabel</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <spacer name="horizontalSpacer">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>80</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout">
-        <item>
-         <widget class="QPushButton" name="pushButton">
-          <property name="text">
-           <string>PushButton</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="pushButton_2">
-          <property name="text">
-           <string>PushButton</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-     </layout>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="title">
+       <string>Voltage</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="title">
+       <string>Temperature</string>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>

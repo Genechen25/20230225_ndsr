@@ -6,7 +6,7 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     AppInit::Instance()->start();
-    AppInit::Instance()->initStyle(":/qss/lightgray.css");
+    AppInit::Instance()->initStyle(":/qss/silvery.css");
 
 
     //可以自己更换图标
@@ -14,6 +14,7 @@ int main(int argc, char *argv[])
 //   QUIConfig::IconMax = 0xf067;
 
     frmMain w;
+
     w.show();
 
     return a.exec();

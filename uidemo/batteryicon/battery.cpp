@@ -64,7 +64,7 @@ void Battery::drawBorder(QPainter *painter)
     painter->drawRoundRect(batteryRect, 15, 15);
     //绘制电池头部
     QPointF headRectTopLeft(width() / 4, 7);
-    QPointF headRectBottomRight(width() / 5 + 43, 19);
+    QPointF headRectBottomRight(width() / 5 + 36, 19);
     QRectF headRect(headRectTopLeft, headRectBottomRight);
     QLinearGradient headRectGradient(headRect.topLeft(), headRect.bottomLeft());
     headRectGradient.setColorAt(0.0, borderColorStart);
@@ -109,7 +109,7 @@ void Battery::drawVal(QPainter *painter)
     QRect textRect = textFont.boundingRect(powerStr);
     painter->setFont(font());
     painter->setPen(QPen(borderColorStart, 5));
-    painter->drawText((90 - textRect.width()) / 2, (100 - textRect.height()), powerStr);
+    painter->drawText((90 - textRect.width()) / 2, (110 - textRect.height()), powerStr);
 
 }
 

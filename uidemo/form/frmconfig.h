@@ -22,6 +22,7 @@ protected:
     bool eventFilter(QObject *watched, QEvent *event);
 
 private:
+    int flag = 0;
     Ui::frmConfig *ui;
     QList<QPushButton *> btns;
 
@@ -30,7 +31,13 @@ private slots:
     void initNav();
     void initIcon();
     void buttonClicked();
-    void on_pushButton_3_clicked();
+    void on_batterydata_clicked();
+    void on_faultenble_clicked();
+
+
 };
+
+
+
 
 #endif // FRMCONFIG_H

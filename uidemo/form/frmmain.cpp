@@ -18,6 +18,7 @@ frmMain::frmMain(QWidget *parent) : QWidget(parent), ui(new Ui::frmMain)
     this->initIcon();
     QUIHelper::setFormInCenter(this);
 //    on_btnMenu_Max_clicked();
+
 }
 
 frmMain::~frmMain()
@@ -103,23 +104,25 @@ void frmMain::initText()
 
 void frmMain::initNav()
 {
-    frmView *view = new frmView;
-    ui->stackedWidget->addWidget(view);
+//    frmView *view = new frmView;
+//    ui->stackedWidget->addWidget(view);
 
-    frmData *data = new frmData;
-    ui->stackedWidget->addWidget(data);
+//    frmData *data = new frmData;
+//    ui->stackedWidget->addWidget(data);
 
     frmConfig *config = new frmConfig;
     ui->stackedWidget->addWidget(config);
 
-    connect(this, SIGNAL(setIndex(int)), view, SLOT(setIndex(int)));
+//    connect(this, SIGNAL(setIndex(int)), view, SLOT(setIndex(int)));
     connect(this, SIGNAL(changeStyle()), this, SLOT(initIcon()));
-    connect(this, SIGNAL(changeStyle()), data, SLOT(initIcon()));
+//    connect(this, SIGNAL(changeStyle()), data, SLOT(initIcon()));
     connect(this, SIGNAL(changeStyle()), config, SLOT(initIcon()));
 
     QList<QString> texts;
-    btns << ui->btnViewDevice << ui->btnViewMap << ui->btnViewData << ui->btnData << ui->btnConfig;
-    texts << "设备监控" << "地图监控" << "数据监控" << "数据查询" << "系统监控";
+//    btns << ui->btnViewDevice << ui->btnViewMap << ui->btnViewData << ui->btnData << ui->btnConfig;
+//    texts << "设备监控" << "地图监控" << "数据监控" << "数据查询" << "系统监控";
+    btns  << ui->btnConfig;
+    texts << "系统监控";
 
     for (int i = 0; i < btns.count(); i++) {
         QPushButton *btn = (QPushButton *)btns.at(i);
@@ -152,31 +155,33 @@ void frmMain::initIcon()
     }
 
     //从图形字体库中设置图标
-    ui->btnViewDevice->setIcon(IconFont::Instance()->getPixmap(QUIConfig::TextColor, 0xea00, 20, 20, 20));
-    ui->btnViewMap->setIcon(IconFont::Instance()->getPixmap(QUIConfig::TextColor, 0xe695, 20, 20, 20));
-    ui->btnViewData->setIcon(IconFont::Instance()->getPixmap(QUIConfig::TextColor, 0xe60a, 20, 20, 20));
-    ui->btnData->setIcon(IconHelper::Instance()->getPixmap(QUIConfig::TextColor, 0xf002, 20, 20, 20));
+//    ui->btnViewDevice->setIcon(IconFont::Instance()->getPixmap(QUIConfig::TextColor, 0xea00, 20, 20, 20));
+//    ui->btnViewMap->setIcon(IconFont::Instance()->getPixmap(QUIConfig::TextColor, 0xe695, 20, 20, 20));
+//    ui->btnViewData->setIcon(IconFont::Instance()->getPixmap(QUIConfig::TextColor, 0xe60a, 20, 20, 20));
+//    ui->btnData->setIcon(IconHelper::Instance()->getPixmap(QUIConfig::TextColor, 0xf002, 20, 20, 20));
     ui->btnConfig->setIcon(IconHelper::Instance()->getPixmap(QUIConfig::TextColor, 0xf085, 20, 20, 20));
 }
 
 void frmMain::buttonClicked()
 {
     QPushButton *btn = (QPushButton *)sender();
-    if (btn == ui->btnViewDevice) {
-        emit setIndex(0);
-        ui->stackedWidget->setCurrentIndex(0);
-    } else if (btn == ui->btnViewMap) {
-        emit setIndex(1);
-        ui->stackedWidget->setCurrentIndex(0);
-    } else if (btn == ui->btnViewData) {
-        emit setIndex(2);
-        ui->stackedWidget->setCurrentIndex(0);
-    } else if (btn == ui->btnData) {
-        ui->stackedWidget->setCurrentIndex(1);
-    } else if (btn == ui->btnConfig) {
-        ui->stackedWidget->setCurrentIndex(2);
+//    if (btn == ui->btnViewDevice) {
+//        emit setIndex(0);
+//        ui->stackedWidget->setCurrentIndex(0);
+//    } else if (btn == ui->btnViewMap) {
+//        emit setIndex(1);
+//        ui->stackedWidget->setCurrentIndex(0);
+//    } else if (btn == ui->btnViewData) {
+//        emit setIndex(2);
+//        ui->stackedWidget->setCurrentIndex(0);
+//    } else if (btn == ui->btnData) {
+//       ui->stackedWidget->setCurrentIndex(1);
+//    } else if (btn == ui->btnConfig) {
+//        ui->stackedWidget->setCurrentIndex(2);
+//    }
+    if (btn == ui->btnConfig) {
+      ui->stackedWidget->setCurrentIndex(2);
     }
-
     //取消其他按钮选中
     foreach (QPushButton *b, btns) {
         b->setChecked(b == btn);
@@ -257,3 +262,7 @@ void frmMain::on_btnMenu_Close_clicked()
 {
     this->close();
 }
+
+
+
+

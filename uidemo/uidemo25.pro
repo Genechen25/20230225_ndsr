@@ -8,7 +8,7 @@ QT       += core gui network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET      = uidemo25
+TARGET      = BBMS
 TEMPLATE    = app
 MOC_DIR     = temp/moc
 RCC_DIR     = temp/rcc
@@ -34,3 +34,4 @@ include ($$PWD/batteryicon/batteryicon.pri)
 
 FORMS += \
     frmbatterydata.ui
+RC_ICONS = ComputingBMS.ico

@@ -3,4 +3,14 @@
         <file>image/fontawesome-webfont.ttf</file>
         <file>image/iconfont.ttf</file>
     </qresource>
+    <qresource prefix="/led">
+        <file>led/LED_Blue.png</file>
+        <file>led/led_green.gif</file>
+        <file>led/LED_Green.png</file>
+        <file>led/led_grey.gif</file>
+        <file>led/LED_Grey.png</file>
+        <file>led/led_red.gif</file>
+        <file>led/LED_Yellow.png</file>
+    </qresource>
+    <qresource prefix="/icon"/>
 </RCC>

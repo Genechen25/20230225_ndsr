@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>876</width>
+    <width>1204</width>
     <height>744</height>
    </rect>
   </property>
@@ -136,7 +136,7 @@ background-color: rgb(255, 255, 255);
 }</string>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>4</number>
      </property>
      <widget class="QWidget" name="ConfigSystemRealtime">
       <widget class="QTableWidget" name="battery_realdata_table">
@@ -195,11 +195,21 @@ background-color: rgb(255, 255, 255);
            <number>0</number>
           </property>
           <property name="leftMargin">
-           <number>115</number>
+           <number>100</number>
           </property>
           <property name="rightMargin">
-           <number>20</number>
+           <number>30</number>
           </property>
+          <item>
+           <widget class="QSlider" name="verticalSlider">
+            <property name="maximum">
+             <number>100</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+          </item>
           <item>
            <layout class="QVBoxLayout" name="verticalLayout_2">
             <property name="spacing">
@@ -208,32 +218,12 @@ background-color: rgb(255, 255, 255);
             <item>
              <widget class="Battery" name="widget_battery_B" native="true"/>
             </item>
-            <item>
-             <widget class="QSlider" name="horizontalSlider">
-              <property name="maximum">
-               <number>100</number>
-              </property>
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-             </widget>
-            </item>
            </layout>
           </item>
           <item>
            <layout class="QVBoxLayout" name="verticalLayout_27">
             <item>
              <widget class="Battery" name="widget_battery_1" native="true"/>
-            </item>
-            <item>
-             <widget class="QSlider" name="horizontalSlider_2">
-              <property name="maximum">
-               <number>100</number>
-              </property>
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-             </widget>
             </item>
            </layout>
           </item>
@@ -242,29 +232,12 @@ background-color: rgb(255, 255, 255);
             <item>
              <widget class="Battery" name="widget_battery_2" native="true"/>
             </item>
-            <item>
-             <widget class="QSlider" name="horizontalSlider_3">
-              <property name="maximum">
-               <number>100</number>
-              </property>
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-             </widget>
-            </item>
            </layout>
           </item>
           <item>
            <layout class="QVBoxLayout" name="verticalLayout_28">
             <item>
              <widget class="Battery" name="widget_battery_3" native="true"/>
-            </item>
-            <item>
-             <widget class="QSlider" name="horizontalSlider_6">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-             </widget>
             </item>
            </layout>
           </item>
@@ -273,26 +246,12 @@ background-color: rgb(255, 255, 255);
             <item>
              <widget class="Battery" name="widget_battery_4" native="true"/>
             </item>
-            <item>
-             <widget class="QSlider" name="horizontalSlider_9">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-             </widget>
-            </item>
            </layout>
           </item>
           <item>
            <layout class="QVBoxLayout" name="verticalLayout_29">
             <item>
              <widget class="Battery" name="widget_battery_5" native="true"/>
-            </item>
-            <item>
-             <widget class="QSlider" name="horizontalSlider_4">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-             </widget>
             </item>
            </layout>
           </item>
@@ -301,26 +260,12 @@ background-color: rgb(255, 255, 255);
             <item>
              <widget class="Battery" name="widget_battery_6" native="true"/>
             </item>
-            <item>
-             <widget class="QSlider" name="horizontalSlider_11">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-             </widget>
-            </item>
            </layout>
           </item>
           <item>
            <layout class="QVBoxLayout" name="verticalLayout_34">
             <item>
              <widget class="Battery" name="widget_battery_7" native="true"/>
-            </item>
-            <item>
-             <widget class="QSlider" name="horizontalSlider_10">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-             </widget>
             </item>
            </layout>
           </item>
@@ -329,13 +274,6 @@ background-color: rgb(255, 255, 255);
             <item>
              <widget class="Battery" name="widget_battery_8" native="true"/>
             </item>
-            <item>
-             <widget class="QSlider" name="horizontalSlider_8">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-             </widget>
-            </item>
            </layout>
           </item>
           <item>
@@ -343,26 +281,12 @@ background-color: rgb(255, 255, 255);
             <item>
              <widget class="Battery" name="widget_battery_9" native="true"/>
             </item>
-            <item>
-             <widget class="QSlider" name="horizontalSlider_5">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-             </widget>
-            </item>
            </layout>
           </item>
           <item>
            <layout class="QVBoxLayout" name="verticalLayout_31">
             <item>
              <widget class="Battery" name="widget_battery_10" native="true"/>
-            </item>
-            <item>
-             <widget class="QSlider" name="horizontalSlider_7">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-             </widget>
             </item>
            </layout>
           </item>
@@ -395,9 +319,2440 @@ background-color: rgb(255, 255, 255);
        </property>
       </widget>
      </widget>
-     <widget class="QWidget" name="ConfigDeviceFault"/>
-     <widget class="QWidget" name="ConfigNodeIOContrl"/>
-     <widget class="QWidget" name="ConfigMapParmEdit"/>
+     <widget class="QWidget" name="ConfigDeviceFault">
+      <widget class="QWidget" name="">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>0</y>
+         <width>1022</width>
+         <height>691</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QGroupBox" name="CAT_1">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(233, 250, 255);</string>
+          </property>
+          <property name="title">
+           <string>CAT 1</string>
+          </property>
+          <widget class="QWidget" name="layoutWidget_3">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>21</y>
+             <width>161</width>
+             <height>164</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_14">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_46">
+              <item>
+               <widget class="QLabel" name="label_41">
+                <property name="text">
+                 <string>单体欠压1级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_30">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="LED1_4" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_47">
+              <item>
+               <widget class="QLabel" name="label_42">
+                <property name="text">
+                 <string>压差过分1级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_31">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>108</width>
+                  <height>17</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="widget_28" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_48">
+              <item>
+               <widget class="QLabel" name="label_43">
+                <property name="text">
+                 <string>放电过温1级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_32">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>95</width>
+                  <height>14</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="widget_29" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_49">
+              <item>
+               <widget class="QLabel" name="label_44">
+                <property name="text">
+                 <string>充电过温1级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_33">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>95</width>
+                  <height>14</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="widget_30" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_50">
+              <item>
+               <widget class="QLabel" name="label_45">
+                <property name="text">
+                 <string>放电低温1级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_34">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>95</width>
+                  <height>14</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="widget_31" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_51">
+              <item>
+               <widget class="QLabel" name="label_46">
+                <property name="text">
+                 <string>充电低温1级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_35">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>92</width>
+                  <height>11</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="widget_32" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="layoutWidget_7">
+           <property name="geometry">
+            <rect>
+             <x>590</x>
+             <y>20</y>
+             <width>151</width>
+             <height>52</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_17">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_64">
+              <item>
+               <widget class="QLabel" name="label_59">
+                <property name="text">
+                 <string>温差过大1级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_48">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="LED1_7" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_65">
+              <item>
+               <widget class="QLabel" name="label_60">
+                <property name="text">
+                 <string>绝缘电阻低1级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_49">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>108</width>
+                  <height>17</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="widget_43" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QPushButton" name="faultenble">
+           <property name="geometry">
+            <rect>
+             <x>894</x>
+             <y>180</y>
+             <width>91</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>故障使能示例</string>
+           </property>
+          </widget>
+          <widget class="QWidget" name="">
+           <property name="geometry">
+            <rect>
+             <x>23</x>
+             <y>22</y>
+             <width>161</width>
+             <height>164</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_9">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_12">
+              <item>
+               <widget class="QLabel" name="label_3">
+                <property name="text">
+                 <string>总压过压1级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="LED1" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_13">
+              <item>
+               <widget class="QLabel" name="label_4">
+                <property name="text">
+                 <string>总压欠压1级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_2">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>108</width>
+                  <height>17</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="widget_2" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_16">
+              <item>
+               <widget class="QLabel" name="label_8">
+                <property name="text">
+                 <string>充电过流1级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_3">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>95</width>
+                  <height>14</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="widget_3" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_17">
+              <item>
+               <widget class="QLabel" name="label_14">
+                <property name="text">
+                 <string>放电过流1级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_4">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>95</width>
+                  <height>14</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="widget_4" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_18">
+              <item>
+               <widget class="QLabel" name="label_15">
+                <property name="text">
+                 <string>SOC低1级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_5">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>95</width>
+                  <height>14</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="widget_5" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_19">
+              <item>
+               <widget class="QLabel" name="label_16">
+                <property name="text">
+                 <string>单体过压1级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_11">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>92</width>
+                  <height>11</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="widget_10" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="CAT_2">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(233, 250, 255);</string>
+          </property>
+          <property name="title">
+           <string>CAT 2</string>
+          </property>
+          <widget class="QWidget" name="">
+           <property name="geometry">
+            <rect>
+             <x>590</x>
+             <y>20</y>
+             <width>151</width>
+             <height>52</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_18">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_72">
+              <item>
+               <widget class="QLabel" name="label_65">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>温差过大2级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_54">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="LED1_8" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_73">
+              <item>
+               <widget class="QLabel" name="label_66">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>绝缘电阻低2级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_55">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>108</width>
+                  <height>17</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="widget_48" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>20</y>
+             <width>161</width>
+             <height>164</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_15">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_52">
+              <item>
+               <widget class="QLabel" name="label_47">
+                <property name="text">
+                 <string>单体欠压2级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_36">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="LED1_6" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_53">
+              <item>
+               <widget class="QLabel" name="label_48">
+                <property name="text">
+                 <string>压差过分2级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_37">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>108</width>
+                  <height>17</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="widget_33" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_54">
+              <item>
+               <widget class="QLabel" name="label_49">
+                <property name="text">
+                 <string>放电过温2级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_38">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>95</width>
+                  <height>14</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="widget_34" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_55">
+              <item>
+               <widget class="QLabel" name="label_50">
+                <property name="text">
+                 <string>充电过温2级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_39">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>95</width>
+                  <height>14</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="widget_35" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_56">
+              <item>
+               <widget class="QLabel" name="label_51">
+                <property name="text">
+                 <string>放电低温2级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_40">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>95</width>
+                  <height>14</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="widget_36" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_57">
+              <item>
+               <widget class="QLabel" name="label_52">
+                <property name="text">
+                 <string>充电低温2级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_41">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>92</width>
+                  <height>11</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="widget_37" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="">
+           <property name="geometry">
+            <rect>
+             <x>22</x>
+             <y>22</y>
+             <width>161</width>
+             <height>164</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_10">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_20">
+              <item>
+               <widget class="QLabel" name="label_17">
+                <property name="text">
+                 <string>总压过压2级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_12">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="LED1_5" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_21">
+              <item>
+               <widget class="QLabel" name="label_18">
+                <property name="text">
+                 <string>总压欠压2级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_13">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>108</width>
+                  <height>17</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="widget_11" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_22">
+              <item>
+               <widget class="QLabel" name="label_19">
+                <property name="text">
+                 <string>充电过流2级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_14">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>95</width>
+                  <height>14</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="widget_12" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_23">
+              <item>
+               <widget class="QLabel" name="label_20">
+                <property name="text">
+                 <string>放电过流2级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_15">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>95</width>
+                  <height>14</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="widget_13" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_24">
+              <item>
+               <widget class="QLabel" name="label_21">
+                <property name="text">
+                 <string>SOC低2级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_16">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>95</width>
+                  <height>14</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="widget_14" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_25">
+              <item>
+               <widget class="QLabel" name="label_22">
+                <property name="text">
+                 <string>单体过压2级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_17">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>92</width>
+                  <height>11</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="widget_15" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="CAT_3">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(233, 250, 255);</string>
+          </property>
+          <property name="title">
+           <string>CAT 3</string>
+          </property>
+          <widget class="QWidget" name="layoutWidget_8">
+           <property name="geometry">
+            <rect>
+             <x>810</x>
+             <y>23</y>
+             <width>141</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_74">
+            <item>
+             <widget class="QLabel" name="label_67">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>短路故障</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_56">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>108</width>
+                <height>17</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="LED" name="widget_49" native="true">
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="">
+           <property name="geometry">
+            <rect>
+             <x>311</x>
+             <y>21</y>
+             <width>161</width>
+             <height>164</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_16">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_58">
+              <item>
+               <widget class="QLabel" name="label_53">
+                <property name="text">
+                 <string>单体欠压3级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_42">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="LED1_10" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_59">
+              <item>
+               <widget class="QLabel" name="label_54">
+                <property name="text">
+                 <string>压差过分3级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_43">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>108</width>
+                  <height>17</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="widget_38" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_60">
+              <item>
+               <widget class="QLabel" name="label_55">
+                <property name="text">
+                 <string>放电过温3级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_44">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>95</width>
+                  <height>14</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="widget_39" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_61">
+              <item>
+               <widget class="QLabel" name="label_56">
+                <property name="text">
+                 <string>充电过温3级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_45">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>95</width>
+                  <height>14</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="widget_40" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_62">
+              <item>
+               <widget class="QLabel" name="label_57">
+                <property name="text">
+                 <string>放电低温3级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_46">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>95</width>
+                  <height>14</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="widget_41" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_63">
+              <item>
+               <widget class="QLabel" name="label_58">
+                <property name="text">
+                 <string>充电低温3级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_47">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>92</width>
+                  <height>11</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="widget_42" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="">
+           <property name="geometry">
+            <rect>
+             <x>21</x>
+             <y>21</y>
+             <width>161</width>
+             <height>164</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_11">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_26">
+              <item>
+               <widget class="QLabel" name="label_23">
+                <property name="text">
+                 <string>总压过压3级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_18">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="LED1_9" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_27">
+              <item>
+               <widget class="QLabel" name="label_24">
+                <property name="text">
+                 <string>总压欠压3级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_19">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>108</width>
+                  <height>17</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="widget_16" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_28">
+              <item>
+               <widget class="QLabel" name="label_25">
+                <property name="text">
+                 <string>充电过流3级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_20">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>95</width>
+                  <height>14</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="widget_17" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_29">
+              <item>
+               <widget class="QLabel" name="label_26">
+                <property name="text">
+                 <string>放电过流3级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_21">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>95</width>
+                  <height>14</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="widget_18" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_30">
+              <item>
+               <widget class="QLabel" name="label_27">
+                <property name="text">
+                 <string>SOC低3级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_22">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>95</width>
+                  <height>14</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="widget_19" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_31">
+              <item>
+               <widget class="QLabel" name="label_28">
+                <property name="text">
+                 <string>单体过压3级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_23">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>92</width>
+                  <height>11</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="widget_20" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="">
+           <property name="geometry">
+            <rect>
+             <x>590</x>
+             <y>20</y>
+             <width>161</width>
+             <height>164</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_19">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_79">
+              <item>
+               <widget class="QLabel" name="label_71">
+                <property name="text">
+                 <string>温差过大3级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_60">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="LED1_11" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_80">
+              <item>
+               <widget class="QLabel" name="label_72">
+                <property name="text">
+                 <string>通信故障</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_61">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>108</width>
+                  <height>17</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="widget_53" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_66">
+              <item>
+               <widget class="QLabel" name="label_73">
+                <property name="text">
+                 <string>主正回路开关粘连故障</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_62">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>95</width>
+                  <height>14</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="widget_54" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_82">
+              <item>
+               <widget class="QLabel" name="label_74">
+                <property name="text">
+                 <string>主负回路开关粘连故障</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_63">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>95</width>
+                  <height>14</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="widget_55" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_83">
+              <item>
+               <widget class="QLabel" name="label_75">
+                <property name="text">
+                 <string>预充故障</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_64">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>95</width>
+                  <height>14</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="widget_56" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_84">
+              <item>
+               <widget class="QLabel" name="label_76">
+                <property name="text">
+                 <string>绝缘电阻低3级</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_65">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>92</width>
+                  <height>11</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="LED" name="widget_57" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="ConfigNodeIOContrl">
+      <widget class="QWidget" name="">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>1038</width>
+         <height>662</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_36">
+        <property name="spacing">
+         <number>10</number>
+        </property>
+        <item>
+         <widget class="QGroupBox" name="IOContr">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>400</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>IO 控制</string>
+          </property>
+          <widget class="QLabel" name="label_86">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>30</y>
+             <width>54</width>
+             <height>12</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>柜号：</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="comboBox_4">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>25</y>
+             <width>69</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>All</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>BBMS</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>RBMS01</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>RBMS02</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>RBMS03</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>RBMS04</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>RBMS05</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>RBMS06</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>RBMS07</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>RBMS08</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>RBMS09</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>RBMS10</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QFrame" name="frame">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>50</y>
+             <width>981</width>
+             <height>341</height>
+            </rect>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QWidget" name="">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>30</y>
+              <width>181</width>
+              <height>301</height>
+             </rect>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_37">
+             <item>
+              <widget class="QLabel" name="label_80">
+               <property name="text">
+                <string>LCR_RackRlyManCtrlEnaCmd</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_81">
+               <property name="text">
+                <string>LCR_RackRlyManCtrlMask</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_82">
+               <property name="text">
+                <string>LCR_RackRlyManCtrlCmd</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_83">
+               <property name="text">
+                <string>LCR_SetEnaIsoManual</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_84">
+               <property name="text">
+                <string>LCR_IDLearnManualCtrl</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_85">
+               <property name="text">
+                <string>Fault Clear</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QLabel" name="label_87">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>10</y>
+              <width>131</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>IO 描述</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_88">
+            <property name="geometry">
+             <rect>
+              <x>280</x>
+              <y>15</y>
+              <width>54</width>
+              <height>12</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>控制命令</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="btnfaultclear">
+            <property name="geometry">
+             <rect>
+              <x>275</x>
+              <y>300</y>
+              <width>75</width>
+              <height>23</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Clear</string>
+            </property>
+           </widget>
+           <widget class="QWidget" name="">
+            <property name="geometry">
+             <rect>
+              <x>270</x>
+              <y>33</y>
+              <width>81</width>
+              <height>251</height>
+             </rect>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_38">
+             <property name="spacing">
+              <number>10</number>
+             </property>
+             <item>
+              <widget class="SwitchButton" name="widget" native="true">
+               <property name="minimumSize">
+                <size>
+                 <width>30</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="SwitchButton" name="widget_21" native="true">
+               <property name="minimumSize">
+                <size>
+                 <width>30</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="SwitchButton" name="widget_22" native="true">
+               <property name="minimumSize">
+                <size>
+                 <width>30</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="SwitchButton" name="widget_44" native="true">
+               <property name="minimumSize">
+                <size>
+                 <width>30</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="SwitchButton" name="widget_45" native="true">
+               <property name="minimumSize">
+                <size>
+                 <width>30</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="SOX">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>250</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>SOX 标定</string>
+          </property>
+          <widget class="QLabel" name="label_78">
+           <property name="geometry">
+            <rect>
+             <x>34</x>
+             <y>92</y>
+             <width>81</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Rack SOC</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_79">
+           <property name="geometry">
+            <rect>
+             <x>34</x>
+             <y>133</y>
+             <width>191</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Bank Accumulated Energy kWh</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="comboBox_2">
+           <property name="geometry">
+            <rect>
+             <x>270</x>
+             <y>91</y>
+             <width>81</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>Rack1</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Rack2</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Rack3</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Rack4</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QComboBox" name="comboBox_3">
+           <property name="geometry">
+            <rect>
+             <x>270</x>
+             <y>127</y>
+             <width>81</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>Discharge</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Charge</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QPushButton" name="btnSOCset">
+           <property name="geometry">
+            <rect>
+             <x>510</x>
+             <y>92</y>
+             <width>75</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Set</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="btnSOPset">
+           <property name="geometry">
+            <rect>
+             <x>510</x>
+             <y>125</y>
+             <width>75</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Set</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_3">
+           <property name="geometry">
+            <rect>
+             <x>740</x>
+             <y>95</y>
+             <width>133</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>40</width>
+             <height>0</height>
+            </size>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_4">
+           <property name="geometry">
+            <rect>
+             <x>740</x>
+             <y>127</y>
+             <width>133</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>40</width>
+             <height>0</height>
+            </size>
+           </property>
+          </widget>
+          <widget class="QWidget" name="">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>50</y>
+             <width>981</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_67">
+            <item>
+             <widget class="QLabel" name="label_61">
+              <property name="text">
+               <string>Parameters</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_62">
+              <property name="text">
+               <string>Target</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_63">
+              <property name="text">
+               <string>Comnand</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_64">
+              <property name="text">
+               <string>   Value</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="ConfigMapParmEdit">
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>70</y>
+         <width>941</width>
+         <height>351</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(216, 216, 216);</string>
+       </property>
+       <property name="currentIndex">
+        <number>4</number>
+       </property>
+       <widget class="QWidget" name="tabWidget_SOC">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(216, 216, 216);</string>
+        </property>
+        <attribute name="title">
+         <string>SOC</string>
+        </attribute>
+       </widget>
+       <widget class="QWidget" name="tabWidget_Volt">
+        <attribute name="title">
+         <string>电压</string>
+        </attribute>
+       </widget>
+       <widget class="QWidget" name="tabWidget_Temp">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(216, 216, 216);</string>
+        </property>
+        <attribute name="title">
+         <string>电流</string>
+        </attribute>
+       </widget>
+       <widget class="QWidget" name="tabWidget_Curr">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(216, 216, 216);</string>
+        </property>
+        <attribute name="title">
+         <string>温度</string>
+        </attribute>
+       </widget>
+       <widget class="QWidget" name="tabWidget_other">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(216, 216, 216);</string>
+        </property>
+        <attribute name="title">
+         <string>其它参数</string>
+        </attribute>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="label_89">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>35</y>
+         <width>54</width>
+         <height>12</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>柜号：</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_5">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>30</y>
+         <width>69</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>All</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BBMS</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RBMS01</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RBMS02</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RBMS03</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RBMS04</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RBMS05</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RBMS06</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RBMS07</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RBMS08</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RBMS09</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RBMS10</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QWidget" name="">
+       <property name="geometry">
+        <rect>
+         <x>730</x>
+         <y>450</y>
+         <width>239</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_68">
+        <item>
+         <widget class="QPushButton" name="btnReaddata">
+          <property name="text">
+           <string>读取</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnWritedata">
+          <property name="text">
+           <string>写入</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnOutputdata">
+          <property name="text">
+           <string>导出</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
      <widget class="QWidget" name="ConfigPositionUpdate">
       <widget class="QWidget" name="layoutWidget">
        <property name="geometry">
@@ -562,7 +2917,7 @@ background-color: rgb(255, 255, 255);
                <widget class="QLineEdit" name="lineEdit"/>
               </item>
               <item>
-               <widget class="QPushButton" name="pushButton">
+               <widget class="QPushButton" name="btnchooseFile">
                 <property name="text">
                  <string>选择文件</string>
                 </property>
@@ -587,7 +2942,7 @@ background-color: rgb(255, 255, 255);
                </widget>
               </item>
               <item>
-               <widget class="QPushButton" name="pushButton_2">
+               <widget class="QPushButton" name="btnstartUpdate">
                 <property name="text">
                  <string>开始升级</string>
                 </property>
@@ -619,6 +2974,21 @@ background-color: rgb(255, 255, 255);
              <height>22</height>
             </rect>
            </property>
+           <item>
+            <property name="text">
+             <string>#1</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>#2</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>#3</string>
+            </property>
+           </item>
           </widget>
          </widget>
         </item>
@@ -998,7 +3368,7 @@ background-color: rgb(255, 255, 255);
        <zorder>datasave</zorder>
        <zorder>bbmssetting</zorder>
       </widget>
-      <widget class="QPushButton" name="save">
+      <widget class="QPushButton" name="btnsave">
        <property name="geometry">
         <rect>
          <x>430</x>
@@ -1011,7 +3381,7 @@ background-color: rgb(255, 255, 255);
         <string>保存</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="cancel">
+      <widget class="QPushButton" name="btncancel">
        <property name="geometry">
         <rect>
          <x>520</x>
@@ -1064,8 +3434,8 @@ background-color: rgb(255, 255, 255);
        </property>
       </widget>
       <zorder>layoutWidget</zorder>
-      <zorder>save</zorder>
-      <zorder>cancel</zorder>
+      <zorder>btnsave</zorder>
+      <zorder>btncancel</zorder>
       <zorder>label_datasave</zorder>
       <zorder>label_canfdsetting</zorder>
       <zorder>label_bbmssetting</zorder>
@@ -1084,54 +3454,34 @@ background-color: rgb(255, 255, 255);
     <slot>setValue(int)</slot>
    </slots>
   </customwidget>
+  <customwidget>
+   <class>LED</class>
+   <extends>QWidget</extends>
+   <header location="global">led.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SwitchButton</class>
+   <extends>QWidget</extends>
+   <header>switchbutton.h</header>
+   <container>1</container>
+  </customwidget>
  </customwidgets>
  <resources/>
  <connections>
   <connection>
-   <sender>horizontalSlider_2</sender>
-   <signal>valueChanged(int)</signal>
-   <receiver>widget_battery_1</receiver>
-   <slot>setValue(int)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>448</x>
-     <y>166</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>448</x>
-     <y>95</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>horizontalSlider</sender>
+   <sender>verticalSlider</sender>
    <signal>valueChanged(int)</signal>
    <receiver>widget_battery_B</receiver>
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>260</x>
-     <y>166</y>
+     <x>271</x>
+     <y>100</y>
     </hint>
     <hint type="destinationlabel">
-     <x>260</x>
-     <y>95</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>horizontalSlider_3</sender>
-   <signal>valueChanged(int)</signal>
-   <receiver>widget_battery_2</receiver>
-   <slot>setValue(int)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>544</x>
-     <y>178</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>544</x>
-     <y>86</y>
+     <x>338</x>
+     <y>100</y>
     </hint>
    </hints>
   </connection>
